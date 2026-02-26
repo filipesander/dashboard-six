@@ -35,4 +35,8 @@ return [
         ],
     ],
 
+    'orders_api' => [
+        'url' => env('ORDERS_API_URL', 'https://dev-crm.ogruposix.com/candidato-teste-pratico-backend-dashboard/test-orders'),
+    ],
+
 ];
