@@ -1,4 +1,3 @@
-import Dashboard from '../pages/dashboard';
 import AppLogoIcon from './app-logo-icon';
 
 export default function AppLogo() {
