@@ -9,7 +9,16 @@ export default function AuthSimpleLayout({
     description,
 }: AuthLayoutProps) {
     return (
-        <div className="flex min-h-svh flex-col items-center justify-center gap-6 bg-background p-6 md:p-10">
+        <div className="relative flex min-h-svh flex-col items-center justify-center gap-6 bg-background p-6 md:p-10">
+            <Link
+                href={home()}
+                className="absolute top-6 left-6 inline-flex items-center gap-1.5 text-sm text-muted-foreground transition-colors hover:text-foreground"
+            >
+                <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+                </svg>
+                Voltar
+            </Link>
             <div className="w-full max-w-sm">
                 <div className="flex flex-col gap-8">
                     <div className="flex flex-col items-center gap-4">
