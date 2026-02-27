@@ -5,6 +5,10 @@ Dashboard de pedidos em Laravel + Inertia/React para o desafio do Grupo Six
 ## O projeto pode ser rodado localmente ou acessando:
 Acesse: **https://dashboard-six.on-forge.com/**
 
+Crie uma conta em "Registrar" e acesse Dashboard e Pedidos
+
+
+
 ## Stack
 
 | Camada   | Tecnologia                        |
@@ -63,9 +67,12 @@ php artisan serve
 npm run dev
 ```
 
-Acesse: **http://127.0.0.1:8000**
+### Acesse: **http://127.0.0.1:8000**
 
-Crie uma conta e acesse o dashboard.
+### Crie uma conta e acesse o dashboard. ou acesse **https://dashboard-six.on-forge.com/**
+
+## Acessando Pedidos, clicando em um Pedido,  terá uma tela interna com os detalhes desse pedido
+
 
 ## Sincronizacao de dados
 
