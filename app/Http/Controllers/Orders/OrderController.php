@@ -16,6 +16,8 @@ class OrderController extends Controller
 
     /**
      * Retorno dos dados para Página de Pedidos
+     *
+     * @param Request $request
      * @return Response
      */
     public function index(Request $request): Response
@@ -96,6 +98,8 @@ class OrderController extends Controller
 
     /**
      * Pagina de Detalhes do Pedido
+     *
+     * @param Order $order
      * @return Response
      */
     public function show(Order $order): Response

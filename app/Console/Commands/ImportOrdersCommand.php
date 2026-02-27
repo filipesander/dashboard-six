@@ -12,6 +12,7 @@ class ImportOrdersCommand extends Command
 
     /**
      * Comando para buscar dados no EndPoint do GrupoSix
+     * 
      * @param OrderImportService $service
      * @return int
      */
