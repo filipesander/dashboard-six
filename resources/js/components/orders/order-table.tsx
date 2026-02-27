@@ -87,17 +87,18 @@ export function OrderTable({ orders, filters }: Props) {
                             </tr>
                         ) : (
                             orders.data.map((order: Order) => (
-                                <tr key={order.id} className="hover:bg-muted/50 transition-colors">
+                                <tr
+                                    key={order.id}
+                                    className="group/row cursor-pointer hover:bg-muted/50 transition-colors"
+                                    onClick={() => router.visit(ordersShow.url(order.id))}
+                                >
                                     <td className="px-4 py-3 text-sm font-mono text-muted-foreground">
                                         {order.id}
                                     </td>
                                     <td className="px-4 py-3">
-                                        <Link
-                                            href={ordersShow.url(order.id)}
-                                            className="font-medium text-primary hover:underline"
-                                        >
+                                        <span className="font-medium text-primary group-hover/row:underline">
                                             {order.name}
-                                        </Link>
+                                        </span>
                                     </td>
                                     <td className="px-4 py-3 text-sm">
                                         {order.customer ? (
