@@ -22,7 +22,7 @@ Crie uma conta em "Registrar" e acesse Dashboard e Pedidos
 
 ## Requisitos
 
-- PHP 8.2+ com extensoes comuns do Laravel (mbstring, openssl, pdo_mysql, etc.)
+- PHP 8.2+ 
 - Composer 2+
 - Node.js 20+ e npm
 - MySQL 8+
@@ -31,7 +31,7 @@ Crie uma conta em "Registrar" e acesse Dashboard e Pedidos
 
 ```bash
 # 1. Clone o repositorio
-git clone <url-do-repositorio>
+git clone git@github.com:filipesander/dashboard-six.git
 cd dashboard-six
 
 # 2. Instale as dependencias
@@ -71,7 +71,7 @@ npm run dev
 
 ### Crie uma conta e acesse o dashboard. ou acesse **https://dashboard-six.on-forge.com/**
 
-## Acessando Pedidos, clicando em um Pedido,  terá uma tela interna com os detalhes desse pedido
+### Acessando Pedidos, clicando em um Pedido,  terá uma tela interna com os detalhes desse pedido
 
 
 ## Sincronizacao de dados
@@ -138,10 +138,10 @@ O projeto usa cache com versionamento via `OrderCache`:
 | Listagem pedidos | 5 minutos  |
 | Filtros (status) | 30 minutos |
 
-O cache e invalidado automaticamente ao importar novos dados (`OrderCache::bump()`).
+O cache é invalidado automaticamente ao importar novos dados.
 
 
-## Muito obrigado pela oportunidade, Pedro e Jéssica🫡
+## Muito obrigado pela oportunidade, Pedro e Jéssica e Grupo Six🫡
 
 
 
